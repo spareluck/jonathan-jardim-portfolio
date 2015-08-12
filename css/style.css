@@ -1,5 +1,4 @@
 html {
-	font-size: 16px;
 	margin: 0;
 }
 body {
@@ -7,6 +6,7 @@ body {
 	-webkit-font-smoothing: antialiased;
 	letter-spacing: 0.04em;
 	font-family: 'Roboto', sans-serif;
+	font-size: 16px;
 }
 header {
 	width: 100%;
