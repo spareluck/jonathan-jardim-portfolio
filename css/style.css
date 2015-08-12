@@ -1,0 +1,332 @@
+html {
+	font-size: 16px;
+	margin: 0;
+}
+body {
+	margin: 0;
+	-webkit-font-smoothing: antialiased;
+	letter-spacing: 0.04em;
+	font-family: 'Roboto', sans-serif;
+}
+header {
+	width: 100%;
+	margin: -1em auto 0;
+	height: 7.25em;
+	border-bottom: 0.2em solid #ADD8E6;
+	position: fixed;
+	z-index: 9999;
+	background-color: #000;
+}
+a {
+	text-decoration: none;
+	color: #fff;
+	font-family: 'Roboto slab', serif;
+}
+ul {
+	margin: 0;
+	padding-left:0;
+	text-align: center;
+	list-style: none;
+}
+/* Logo Styles and Layout*/
+.logo {
+	text-align: center;
+	float: left;
+	margin:0.5em 2em 0;
+	padding: 0.5em;
+}
+.first-name {
+	font-family: 'Pacifico', cursive;
+	font-size: 2em;
+	margin:0 0 -0.75em;
+	color: #ADD8E6;
+}
+.last-name {
+	font-family: 'Bevan', cursive;
+	font-size: 3em;
+	color: #fff;
+	margin: 0;
+}
+
+/* Navigation Styles and Layout */ 
+
+nav li {
+	display: inline-block;
+	margin: 4em 1.5em 0.25em 0;
+	padding-bottom: 0.25em;
+}
+nav a {
+	font-size: 1.5em;
+}
+nav a:hover {
+	color: #ADD8E6;
+}
+nav a:active {
+	color: #e6adbc;
+}
+
+/* Introduction Styles and Layout */
+
+.introduction {
+	background-image: url(../images/desk.jpeg);
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center bottom;
+	width: 100%;
+	height: 35em;
+	padding-top: 7em;
+	box-shadow: inset 0 0 0 1000px rgba(0,0,0,.9);
+}
+.introduction::after {
+  content: "";
+  background: url(../images/pattern.jpeg);
+  background-repeat: repeat;
+  width: 100%;
+  height: 42em;
+  opacity: 0.1;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0; 
+  position: absolute;
+  z-index: 1; 
+}
+.content {
+	width: 85%;
+	margin: 9em auto 0;
+	color: #fff;
+	text-align: center;
+}
+.content h1 {
+	font-family: 'Roboto slab', serif;
+	color: #fff;
+	font-size: 2.5em;
+	text-align: center;
+	position: relative;
+	z-index: 2;
+	line-height: 1.2;
+}
+.content .last-name, .content .first-name {
+	font-size: 1em;
+	margin:0.;
+}
+.content h2 {
+	line-height: 1.5;
+	margin-top: 2em;
+}
+
+/* Style and Layout of Projects Section */
+.projects {
+	background-color: #fff;
+	height: 125ßem;
+	width: 100%;
+}
+.projects h2 {
+	font-family: 'Roboto slab', serif;
+}
+.projects ul {
+	width: 85%;
+	margin: 0 auto;
+}
+.projects li {
+	width: 100%;
+	margin: 0 auto 2em;
+}
+.projects .caption {
+	margin: 5em auto 2em;
+}
+
+.projects img {
+	box-shadow: 0.3125em 0.3125em 0.3125em 0.1875em rgba(0,0,0,.2);
+}
+.projects li:last-child {
+	margin-bottom: 10em;
+}
+/* Style and Layout of Footer*/
+
+footer {
+  background-color: #000;
+  background-image: url(../images/pattern.jpeg);
+  background-repeat: repeat;
+  box-shadow: inset 0 0 0 1000px rgba(0,0,0,.95);
+  width: 100%;
+  height: 20em;
+  opacity: 0.95; 
+  position: absolute;
+  z-index: 1; 
+  text-align: center;
+  color: #fff;
+}
+footer h3{
+	text-align: center;
+	margin-top: 2.5em;
+}
+footer li {
+	display:inline-block;
+	margin: 0.75em 2em 4em 0;
+}
+footer span {
+	font-size: 1em;
+}
+footer .unsplash a {
+	font-size: 1.25em;
+	color: #fff;
+}
+footer li p {
+	margin-top: 0.25em;
+}
+footer li:hover {
+	transform:scale(1.25);
+}
+footer .unsplash a:hover {
+	color: #ADD8E6;
+}
+footer .unsplash a:active {
+	color: #e6adbc;
+}
+
+footer .twitter i {
+	color: #00ABF0;
+}
+
+footer .linkedin i {
+	color: #006699;
+}
+
+@media screen and (max-width: 1200px){
+	.introduction .content {
+		width: 50%;
+	}
+}
+
+@media screen and (max-width: 800px){
+	.introduction .content {
+		width: 75%;
+	}
+}
+@media screen and (max-width: 700px){
+	header {
+		height: 18em;
+		position: static;
+		margin: 0;
+		padding: 0;
+	}
+	nav ul {
+		margin-top: 1em;
+
+	}
+	nav li {
+		display: block;
+		margin: 0.25em auto 0;
+	}
+	header .logo {
+		margin: 0;
+		padding-top: 1em;
+		float: none;
+		text-align: center;
+		padding: 0;
+	}
+	.first-name {
+		margin: 0 0 -0.75em;
+		padding-top: 0.5em;
+	}
+	
+	.introduction {
+		padding-top: 0;
+		margin: 0;
+	}
+	.introduction::after {
+		height: 35.4em;
+		padding: 0;
+		margin: 0;
+		top: 18em;
+		left: 0;
+		bottom: 0;
+		right: 0; 
+	}
+	.content {
+		margin: 0 auto;
+	}
+	.content h1 {
+		margin-top: 0;
+		padding-top: 2em;
+	}
+}
+
+@media screen and (max-width: 529px) {
+	.introduction .content {
+		width: 95%;
+	}
+	.projects ul {
+		width: 100%;
+	}
+	.projects li {
+		width: 95%;
+	}
+}
+
+@media screen and (max-width: 420px) {
+	.introduction {
+		padding-top: 0;
+		margin: 0;
+		height: 20em;
+	}
+	.introduction::after {
+		height: 20.2em;
+		padding: 0;
+		margin: 0;
+		top: 18em;
+		left: 0;
+		bottom: 0;
+		right: 0; 
+	}
+	.introduction .content h1 {
+		font-size: 2em;
+	}
+	.introduction .content h2 {
+		font-size: 1em;
+	}
+	.projects li h2 {
+		font-size: 1.25em;
+	}
+	.projects li p {
+		font-size: 0.9em;
+	}
+	footer li {
+		margin-right: 0.5em;
+	}
+	footer ul {
+		width: 100%;
+	}
+}
+@media screen and (max-width: 336px) {
+	.introduction .content h1 {
+		font-size: 1.75em;
+		padding-top: 1em;
+	}
+	.introduction .content h2 {
+		font-size: 1em;
+	}
+	.projects li:last-child{
+		margin-bottom: 3em;
+	}
+}
+@media screen and (max-width: 293px) {
+	.introduction .content {
+		width: 100%;
+	}
+	.introduction .content h1 {
+		font-size: 1.5em;
+	}
+	footer {
+		height: 35em;
+	}
+	footer li {
+		display: block;
+		margin: 0 auto 1em;
+	}
+	footer .unsplash {
+		display:block;
+		margin-top: 5.5em;
+}	
+
