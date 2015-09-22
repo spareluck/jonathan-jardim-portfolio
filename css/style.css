@@ -28,6 +28,8 @@ ul {
 	text-align: center;
 	list-style: none;
 }
+
+
 /* Logo Styles and Layout*/
 .logo {
 	text-align: center;
@@ -48,8 +50,8 @@ ul {
 	margin: 0;
 }
 
-/* Navigation Styles and Layout */ 
 
+/* Navigation Styles and Layout */ 
 nav li {
 	display: inline-block;
 	margin: 4em 1.5em 0.25em 0;
@@ -65,8 +67,8 @@ nav a:active {
 	color: #e6adbc;
 }
 
-/* Introduction Styles and Layout */
 
+/* Introduction Styles and Layout */
 .introduction {
 	background-image: url(../images/desk.jpeg);
 	background-repeat: no-repeat;
@@ -115,10 +117,11 @@ nav a:active {
 	margin-top: 2em;
 }
 
+
 /* Style and Layout of Projects Section */
 .projects {
 	background-color: #fff;
-	height: 125ßem;
+	height: 125em;
 	width: 100%;
 }
 .projects h2 {
@@ -138,12 +141,14 @@ nav a:active {
 
 .projects img {
 	box-shadow: 0.3125em 0.3125em 0.3125em 0.1875em rgba(0,0,0,.2);
+	max-width: 80%;
 }
 .projects li:last-child {
 	margin-bottom: 10em;
 }
-/* Style and Layout of Footer*/
 
+
+/* Style and Layout of Footer*/
 footer {
   background-color: #000;
   background-image: url(../images/pattern.jpeg);
@@ -197,6 +202,8 @@ footer .linkedin i {
 	color: #006699;
 }
 
+
+/* Responsive Design */
 @media screen and (max-width: 1200px){
 	.introduction .content {
 		width: 50%;
@@ -257,6 +264,7 @@ footer .linkedin i {
 	}
 }
 
+/* Responsive design */
 @media screen and (max-width: 529px) {
 	.introduction .content {
 		width: 95%;
